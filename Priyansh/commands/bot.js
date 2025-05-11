@@ -1,19 +1,14 @@
-const axios = require('axios');
-const fs = require('fs'); 
-const path = require('path');
-
-module.exports = {
-  config: {
-    name: "bot",
-    version: "1.0.0",
-    permission: 0,
-    credits: "nayan",
-    description: "talk with-bot",
-    prefix: 'awto',
-    category: "talk",
-    usages: "hi",
-    cooldowns: 5,
-  },
+const fs = global.nodemodule["fs-extra"];
+module.exports.config = {
+  name: "goibot",
+  version: "1.0.1",
+  hasPermssion: 0,
+  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+  description: "goibot",
+  commandCategory: "Noprefix",
+  usages: "noprefix",
+  cooldowns: 5,
+};
 
   handleReply: async function ({ api, event }) {
     try {
